@@ -37,6 +37,9 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.3)
+    backbone-radio-rails (0.9.0)
+    backbone-rails (1.1.2)
+      rails (>= 3.0.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
@@ -56,6 +59,8 @@ GEM
     execjs (2.6.0)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
+    haml (4.0.7)
+      tilt
     i18n (0.7.0)
     jbuilder (2.3.1)
       activesupport (>= 3.0.0, < 5)
@@ -69,6 +74,8 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
+    marionette-rails (2.4.1)
+      railties (>= 3.1)
     mime-types (2.6.1)
     mini_portile (0.6.2)
     minitest (5.8.0)
@@ -141,11 +148,15 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  backbone-radio-rails (= 0.9.0)
+  backbone-rails (= 1.1.2)
   byebug
   coffee-rails (~> 4.1.0)
   etsy (= 0.3.0)
+  haml (= 4.0.7)
   jbuilder (~> 2.0)
   jquery-rails (= 4.0.4)
+  marionette-rails (= 2.4.1)
   pg (= 0.18.2)
   rails (= 4.2.3)
   sass-rails (~> 5.0)

@@ -13,8 +13,16 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+# Use HAML to generate markup
+gem 'haml', '4.0.7'
 # Use jquery as the JavaScript library
 gem 'jquery-rails', '4.0.4'
+# Use Backbone front-end framework
+gem 'backbone-rails', '1.1.2'
+# Use Marionette front-end framework
+gem 'marionette-rails', '2.4.1'
+# Use Backbone.Radio messaging pattern
+gem 'backbone-radio-rails', '0.9.0'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.

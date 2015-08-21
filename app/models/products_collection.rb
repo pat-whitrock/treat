@@ -1,0 +1,2 @@
+class ProductsCollection
+end
