@@ -18,4 +18,7 @@
 //= require backbone
 //= require backbone.marionette
 //= require backbone.radio
+//= require apps/products/products_app
+//= require_tree ./apps/products/templates
+//= require_tree ./apps/products/views
 //= require_tree .
