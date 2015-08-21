@@ -1,14 +1,9 @@
-this.TreatApp.module('ProductsApp', function(ProductsApp, App, Backbone, Marionette, $, _) {
-  var API;
+var ProductsApp = new Marionette.Application();
 
-  API = {
-    showIndex: function() {
-      return ProductsApp.Controllers.Index.show();
-    }
-  };
+ProductsApp.addRegions({
+  productsRegion: '#products'
+});
 
-  return ProductsApp.on('start', function() {
-    debugger
-    return API.showIndex();
-  });
+ProductsApp.on('start', function() {
+  return this.productsRegion.show(new this.Views.Index);
 });

@@ -15,6 +15,8 @@ gem 'coffee-rails', '~> 4.1.0'
 
 # Use HAML to generate markup
 gem 'haml', '4.0.7'
+# Use mustache for logic-less templating
+gem 'mustache-js-rails', '2.0.2'
 # Use jquery as the JavaScript library
 gem 'jquery-rails', '4.0.4'
 # Use Backbone front-end framework

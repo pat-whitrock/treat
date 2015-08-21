@@ -1,5 +1,5 @@
-TreatApp.module("ProductsApp.Views", function(Views, App, Backbone, Marionette, $, _) {
-  return Views.IndexView = Marionette.LayoutView.extend({
-    template: ich.index
-  })
+ProductsApp.Views = {}
+  debugger
+ProductsApp.Views.Index = Marionette.LayoutView.extend({
+  template: ich.index
 });
