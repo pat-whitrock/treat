@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
   def index
-    @products = ProductsCollection.new
+    # Do we use jBuilder for all of this?
+    @products = ProductsCollection.new.as_json
   end
 end
