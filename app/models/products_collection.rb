@@ -1,20 +1,20 @@
 class ProductsCollection
   BATCH_SIZE = 25
 
-  def as_json # or can we use jBuilder for all of this?
+  def as_json
     products.map do |product|
       {
-        name: product.name,
-        image: product.image_url
+        image_url: product.image_url,
+        name: product.name
       }
     end
   end
 
   private
 
-  attr_reader :products
-
   def products
-    # @products ||= Etsy::Product.get_active_products
+    @products ||= Etsy::Listing.find_all_active_by_category(Category.random).map do |listing|
+      Product.new name: listing.title, image_url: listing.image.full
+    end
   end
 end

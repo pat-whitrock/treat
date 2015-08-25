@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  ProductsApp.Views.Actions = Marionette.LayoutView.extend({
+  ProductsApp.Views.ActionsView = Marionette.LayoutView.extend({
     template: ich.actions
   });
 });
