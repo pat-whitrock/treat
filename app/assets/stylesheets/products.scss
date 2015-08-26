@@ -40,6 +40,16 @@ h3 {
   float: left;
 }
 
+#products_container {
+  .product {
+    display: none;
+  }
+
+  .product:first-child {
+    display: block;
+  }
+}
+
 .module {
   width: 391px;
   margin: 20px 0 20px 0;
