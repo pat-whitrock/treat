@@ -7,10 +7,6 @@ $(document).ready(function() {
       products: '#products'
     },
 
-    initialize: function(collection) {
-      this.collection = collection;
-    },
-
     onRender: function() {
       var actions_view = new ProductsApp.Views.ActionsView;
       var products_view = new ProductsApp.Views.ProductsView({

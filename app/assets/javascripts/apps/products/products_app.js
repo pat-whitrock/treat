@@ -10,7 +10,8 @@ ProductsApp.Views = {};
 
 ProductsApp.on('start', function(products) {
   var products_collection = new this.Collections.ProductsCollection(products);
-  var layout = new this.Views.LayoutView(products_collection);
+  var layout = new this.Views.LayoutView;
+  layout.collection = products_collection
 
   return this.mainRegion.show(layout);
 });
