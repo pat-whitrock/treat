@@ -17,7 +17,7 @@ body {
   color: #FFFFFF;
 }
 
-#product_wrapper{
+.wrapper{
   width: 391px;
   margin: 0px auto;
 }
@@ -39,7 +39,6 @@ h3 {
   padding: 8px 0 8px 0;
   float: left;
 }
-
 
 .module {
   width: 391px;
@@ -66,7 +65,7 @@ h3 {
   clear:both;
  }
 
-p{
+p {
   font-weight: 300;
   text-align: center;
 }
