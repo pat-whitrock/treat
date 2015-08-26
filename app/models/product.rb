@@ -1,8 +1,8 @@
 class Product
-  attr_reader :image_url, :name
+  attr_reader :image_url, :title
 
-  def initialize image_url:, name:
+  def initialize image_url:, title:
     @image_url = image_url
-    @name = name
+    @title = title
   end
 end

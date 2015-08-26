@@ -5,16 +5,20 @@ class ProductsCollection
     products.map do |product|
       {
         image_url: product.image_url,
-        name: product.name
+        title: product.title
       }
     end
   end
 
   private
 
+  def fetch_listings
+    Etsy::Listing.find_all_active_by_category Category.random, limit: BATCH_SIZE
+  end
+
   def products
-    @products ||= Etsy::Listing.find_all_active_by_category(Category.random).map do |listing|
-      Product.new name: listing.title, image_url: listing.image.full
+    @products ||= fetch_listings.map do |listing|
+      Product.new title: listing.title, image_url: listing.image.full
     end
   end
 end
